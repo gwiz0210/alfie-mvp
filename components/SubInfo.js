@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
-
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { SIZES, FONTS, COLORS, SHADOWS, assets } from "../constants";
 
 export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
@@ -22,7 +22,7 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
           color: COLORS.primary,
         }}
       >
-        by {subTitle}
+        {subTitle}
       </Text>
     </View>
   );
@@ -31,11 +31,8 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
 export const EthPrice = ({ price }) => {
   return (
     <View style={{ flexDirection: "row", alignItems: "center" }}>
-      <Image
-        source={assets.eth}
-        resizeMode="contain"
-        style={{ width: 20, height: 20, marginRight: 2 }}
-      />
+    
+       <Ionicons name="md-location" size={24} color="black" />
       <Text
         style={{
           fontFamily: FONTS.medium,
@@ -43,7 +40,7 @@ export const EthPrice = ({ price }) => {
           color: COLORS.primary,
         }}
       >
-        {price}
+        {price} events nearby
       </Text>
     </View>
   );
@@ -75,7 +72,7 @@ export const People = () => {
   );
 };
 
-export const EndDate = () => {
+export const StartDate = () => {
   return (
     <View
       style={{
@@ -97,7 +94,7 @@ export const EndDate = () => {
           color: COLORS.primary,
         }}
       >
-        Ending in
+        Starting in
       </Text>
       <Text
         style={{
@@ -124,7 +121,7 @@ export const SubInfo = () => {
       }}
     >
       <People />
-      <EndDate />
+      <StartDate />
     </View>
   );
 };

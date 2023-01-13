@@ -54,7 +54,7 @@ const Details = ({ route, navigation }) => {
       </View>
 
       <FlatList
-        data={data.bids}
+        data={data.specials}
         renderItem={({ item }) => <DetailsBid bid={item} />}
         keyExtractor={(item) => item.id}
         showsVerticalScrollIndicator={false}
@@ -68,7 +68,7 @@ const Details = ({ route, navigation }) => {
             <View style={{ padding: SIZES.font }}>
               <DetailsDesc data={data} />
 
-              {data.bids.length > 0 && (
+              {data.specials.length > 0 && (
                 <Text
                   style={{
                     fontSize: SIZES.font,
@@ -76,7 +76,7 @@ const Details = ({ route, navigation }) => {
                     color: COLORS.primary,
                   }}
                 >
-                  Current Bid
+                  {data.specials.length}  specials 
                 </Text>
               )}
             </View>

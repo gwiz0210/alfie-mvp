@@ -20,12 +20,12 @@ const DetailsDesc = ({ data }) => {
       >
         <NFTTitle
           title={data.name}
-          subTitle={data.creator}
+          subTitle={data.neighborhood}
           titleSize={SIZES.extraLarge}
           subTitleSize={SIZES.font}
         />
 
-        <EthPrice price={data.price} />
+        <EthPrice price={data.eventsNearby} />
       </View>
 
       <View style={{ marginVertical: SIZES.extraLarge * 1.5 }}>

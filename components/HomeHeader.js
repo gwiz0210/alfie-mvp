@@ -19,7 +19,7 @@ const HomeHeader = ({ onSearch }) => {
         }}
       >
         <Image
-          source={assets.logo}
+          source={assets.alfieLogo}
           resizeMode="contain"
           style={{ width: 90, height: 25 }}
         />
@@ -63,7 +63,7 @@ const HomeHeader = ({ onSearch }) => {
             marginTop: SIZES.base / 2,
           }}
         >
-          Let’s find masterpiece Art
+          Drink and eat on a budget
         </Text>
       </View>
 
@@ -85,7 +85,7 @@ const HomeHeader = ({ onSearch }) => {
             style={{ width: 20, height: 20, marginRight: SIZES.base }}
           />
           <TextInput
-            placeholder="Search NFTs"
+            placeholder="Search bars and restuarants"
             style={{ flex: 1 }}
             onChangeText={onSearch}
           />

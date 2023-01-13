@@ -44,7 +44,7 @@ const NFTCard = ({ data }) => {
       <View style={{ width: "100%", padding: SIZES.font }}>
         <NFTTitle
           title={data.name}
-          subTitle={data.creator}
+          subTitle={data.neighborhood}
           titleSize={SIZES.large}
           subTitleSize={SIZES.small}
         />
@@ -57,7 +57,7 @@ const NFTCard = ({ data }) => {
             alignItems: "center",
           }}
         >
-          <EthPrice price={data.price} />
+          <EthPrice price={data.eventsNearby} />
           <RectButton
             minWidth={120}
             fontSize={SIZES.font}
