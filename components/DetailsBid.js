@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
 
-import { EthPrice } from "./SubInfo";
+import { EventsNearBy } from "./SubInfo";
 import { COLORS, SIZES, FONTS } from "../constants";
 
 const DetailsBid = ({ bid }) => {
@@ -51,7 +51,7 @@ const DetailsBid = ({ bid }) => {
         </Text>
       </View>
 
-      <EthPrice price={bid.price} />
+      <EventsNearBy price={bid.price} />
     </View>
   );
 };

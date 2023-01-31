@@ -44,7 +44,7 @@ const HomeHeader = ({ onSearch }) => {
         </View>
       </View>
 
-      <View style={{ marginVertical: SIZES.font }}>
+      {/* <View style={{ marginVertical: SIZES.font }}>
         <Text
           style={{
             fontFamily: FONTS.regular,
@@ -65,7 +65,7 @@ const HomeHeader = ({ onSearch }) => {
         >
           Drink and eat on a budget
         </Text>
-      </View>
+      </View> */}
 
       <View style={{ marginTop: SIZES.font }}>
         <View

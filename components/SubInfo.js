@@ -3,9 +3,9 @@ import { View, Image, Text } from "react-native";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { SIZES, FONTS, COLORS, SHADOWS, assets } from "../constants";
 
-export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
+export const RestaurantTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
   return (
-    <View>
+    <View  style={{ marginTop: SIZES.large  }}>
       <Text
         style={{
           fontFamily: FONTS.semiBold,
@@ -28,7 +28,7 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
   );
 };
 
-export const EthPrice = ({ price }) => {
+export const EventsNearBy = ({ price }) => {
   return (
     <View style={{ flexDirection: "row", alignItems: "center" }}>
     
@@ -120,8 +120,8 @@ export const SubInfo = () => {
         justifyContent: "space-between",
       }}
     >
-      <People />
-      <StartDate />
+      {/* <People /> */}
+      {/* <StartDate /> */}
     </View>
   );
 };

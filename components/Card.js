@@ -3,10 +3,10 @@ import { useNavigation } from "@react-navigation/native";
 import { View, Image } from "react-native";
 
 import { COLORS, SIZES, SHADOWS, assets } from "../constants";
-import { SubInfo, EthPrice, NFTTitle } from "./SubInfo";
+import { SubInfo, EventsNearBy, RestaurantTitle } from "./SubInfo";
 import { RectButton, CircleButton } from "./Button";
 
-const NFTCard = ({ data }) => {
+const Card = ({ data }) => {
   const navigation = useNavigation();
 
   return (
@@ -41,8 +41,8 @@ const NFTCard = ({ data }) => {
 
       <SubInfo />
 
-      <View style={{ width: "100%", padding: SIZES.font }}>
-        <NFTTitle
+      <View style={{ width: "100%", padding: SIZES.font,  }}>
+        <RestaurantTitle
           title={data.name}
           subTitle={data.neighborhood}
           titleSize={SIZES.large}
@@ -57,7 +57,7 @@ const NFTCard = ({ data }) => {
             alignItems: "center",
           }}
         >
-          <EthPrice price={data.eventsNearby} />
+          <EventsNearBy price={data.eventsNearby} />
           <RectButton
             minWidth={120}
             fontSize={SIZES.font}
@@ -69,4 +69,4 @@ const NFTCard = ({ data }) => {
   );
 };
 
-export default NFTCard;
+export default Card;

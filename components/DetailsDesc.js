@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text } from "react-native";
 
-import { EthPrice, NFTTitle } from "./SubInfo";
+import { EventsNearBy, RestaurantTitle } from "./SubInfo";
 import { COLORS, SIZES, FONTS } from "../constants";
 
 const DetailsDesc = ({ data }) => {
@@ -18,14 +18,14 @@ const DetailsDesc = ({ data }) => {
           alignItems: "center",
         }}
       >
-        <NFTTitle
+        <RestaurantTitle
           title={data.name}
           subTitle={data.neighborhood}
           titleSize={SIZES.extraLarge}
           subTitleSize={SIZES.font}
         />
 
-        <EthPrice price={data.eventsNearby} />
+        <EventsNearBy price={data.eventsNearby} />
       </View>
 
       <View style={{ marginVertical: SIZES.extraLarge * 1.5 }}>
